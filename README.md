@@ -8,9 +8,12 @@ Upload and download files to Google Drive by using Quasar v1 and NodeJS API.
 - Vuex
 - Axios
 - NodeJS Express
-- Google API
+- Google APIs
+- OAuth2
 
 ## To run this project
+
+To be able to connect with Google Drive, the NodeJS API must have a credentials file with all the permissions needed by your account.
 
 ### Google API
 
@@ -19,11 +22,11 @@ Upload and download files to Google Drive by using Quasar v1 and NodeJS API.
 	
 ![node01](/docs/node01.JPG)
 
-- If this window appears, give a name for your project, agree with the terms and services and click on "NEXT":
+- If this window appears, give a name to your project, agree with the terms and services and click on "NEXT":
 
 ![node02](/docs/node02.JPG)
 
-- Click on "DOWNLOAD CLIENT CONFIGURATION" to download the "credentials.json" file:
+- Note the Cliend ID and Client Secret for your own knowledge and then click on "DOWNLOAD CLIENT CONFIGURATION" to download the "credentials.json" file:
 
 ![node03](/docs/node03.JPG)
 
@@ -34,30 +37,34 @@ Upload and download files to Google Drive by using Quasar v1 and NodeJS API.
 ![node03_2](/docs/node03_2.JPG)
 
 - Open the terminal and download the packages:
-	`npm install`
+```batch
+	npm install
+```
 
 - Run the server:
-	`node .`
+```batch
+	node .
+```
 
 - Copy the long URL displayed on the terminal:
 
 ![node04](/docs/node04.JPG)
 
-- Paste it on a browser tab and access a google authentication page:
+- Paste it on a browser tab and access the google account page:
 
 ![node05](/docs/node05.JPG)
 
-- If this warning screen appears, click on "Advanced" and on "Access Quickstart (not safe)"
+- If a warning screen appears, click on these links to proceed:
 
 ![node06](/docs/node06.JPG)
 
 ![node07](/docs/node07.JPG)
 
-- Give all permissions for the app Quickstart to your Google Drive account.
+- Give all the permissions needed by the Quickstart app to your Google Drive account.
 
 ![node08](/docs/node08.JPG)
 
-- Last confirmation screen. 
+- Confirm all the permissions again:
 
 ![node09](/docs/node09.JPG)
 
@@ -78,11 +85,27 @@ Upload and download files to Google Drive by using Quasar v1 and NodeJS API.
 ### Quasar App
 
 - Open the terminal inside the "quasar" folder and download the packages:
-	`npm install`
+```batch
+	npm install
+```
 	
 - Run the app:
-	`quasar dev`
+```batch
+	quasar dev
+```
 	
 - At the main screen, press the "Upload File" button:
 
-![Alt Text](/docs/quasar01.JPG)
+![quasar01](/docs/quasar01.JPG)
+	
+- Choose a file from your computer and press on "Upload" button:
+
+![quasar02](/docs/quasar02.JPG)
+
+- If a positive message has appeared, go back to the main screen and click on "List Files" button. Your file should be on the top of the list. It only shows the last 10 uploaded files.
+
+![quasar03](/docs/quasar03.JPG)
+
+- If you click on any file, you will be able to download it.
+
+![quasar04](/docs/quasar04.JPG)
