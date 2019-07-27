@@ -17,8 +17,7 @@ To be able to connect with Google Drive, the NodeJS API must have a credentials 
 
 ### Google API
 
-- Acess this link and click on "ENABLE THE DRIVE API":
-	`https://developers.google.com/drive/api/v3/quickstart/nodejs`
+- Acess this [link](https://developers.google.com/drive/api/v3/quickstart/nodejs) and click on "ENABLE THE DRIVE API":
 	
 ![node01](/docs/node01.JPG)
 
