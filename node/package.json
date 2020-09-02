@@ -14,7 +14,7 @@
 		"cors": "^2.8.5",
 		"express": "^4.16.4",
 		"file-system": "^2.2.2",
-		"googleapis": "^36.0.0",
+		"googleapis": "^39.1.0",
 		"multer": "^1.4.1"
 	},
 	"devDependencies": {
